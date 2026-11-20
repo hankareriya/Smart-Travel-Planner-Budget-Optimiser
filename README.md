@@ -5,7 +5,7 @@ TripWise is a full-stack web application designed to simplify travel planning. I
 
 The application generates day-wise itineraries and helps users manage their travel budget efficiently.
 
-## ✨ Features
+## Features
 
 - User registration and login.
 - Browse popular travel destinations.
@@ -19,7 +19,7 @@ The application generates day-wise itineraries and helps users manage their trav
 - View planned activities and estimated expenses.
 - Track total budget, planned expenses, and remaining budget.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React.js
@@ -46,7 +46,7 @@ The application generates day-wise itineraries and helps users manage their trav
 - Git and GitHub
 - Postman / Swagger UI
 
-## 🧠 Algorithms Used
+## Algorithms Used
 
 ### 1. Attraction Ranking Algorithm
 Ranks attractions using multiple factors:
@@ -65,7 +65,7 @@ Finds optimized routes between attractions based on travel distance, time, or co
 ### 4. Route Optimization
 Uses attraction locations and travel information to arrange activities into an efficient itinerary.
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Smart-Travel-Planner/
@@ -108,7 +108,7 @@ Smart-Travel-Planner/
 └── README.md
 ```
 
-## ⚙️ Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
 
@@ -225,7 +225,7 @@ http://localhost:5173
 
 Make sure the frontend API configuration points to the running backend.
 
-## 🔐 Demo Login Credentials
+## Demo Login Credentials
 
 The following are example credentials for testing.
 
