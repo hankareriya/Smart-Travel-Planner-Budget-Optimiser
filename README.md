@@ -1,5 +1,5 @@
 
-# 🌍 TripWise – Smart Travel Planner & Budget Optimizer
+# TripWise – Smart Travel Planner & Budget Optimizer
 
 TripWise is a full-stack web application designed to simplify travel planning. It helps users create personalized trips based on their destination, travel dates, budget, interests, and preferred optimization mode.
 
