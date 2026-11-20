@@ -270,7 +270,7 @@ For complete API details, visit:
 
 `http://127.0.0.1:8000/docs`
 
-## 🔒 Security Notes
+## Security Notes
 
 - Database credentials are stored in environment variables.
 - JWT signing keys should be kept private.
@@ -278,7 +278,7 @@ For complete API details, visit:
 - `.env.example` should contain placeholders only.
 - Development-only endpoints should be removed or protected before deployment.
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Complete frontend signup functionality.
 - Integrate interactive maps.
@@ -287,14 +287,6 @@ For complete API details, visit:
 - Add more destinations and attractions.
 - Deploy the application to a cloud platform.
 
-## 👩‍💻 Author
-
-**Riya Hankare**
-
-Computer Science Engineering
-
-COEP Technological University
-
-## 📄 License
+## License
 
 This project is available for educational and portfolio purposes. No formal open-source license has been added yet.
