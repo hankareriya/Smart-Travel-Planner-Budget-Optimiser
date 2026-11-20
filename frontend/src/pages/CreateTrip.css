@@ -1,0 +1,201 @@
+/* =========================
+   CREATE TRIP PAGE
+========================= */
+
+.create-trip-page {
+  max-width: 750px;
+
+  margin: 60px auto;
+  padding: 40px;
+}
+
+.create-trip-page h1 {
+  text-align: center;
+
+  margin-bottom: 10px;
+
+  font-size: 36px;
+}
+
+.create-trip-page > p {
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  color: #666;
+  font-size: 17px;
+}
+
+/* Form */
+
+.create-trip-page .form-group {
+  margin-bottom: 25px;
+}
+
+.create-trip-page .form-group > label {
+  display: block;
+
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+.create-trip-page .form-group input[type="text"],
+.create-trip-page .form-group input[type="date"],
+.create-trip-page .form-group input[type="number"] {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+.create-trip-page .form-group input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+/* Travelers */
+
+.traveler-control {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.traveler-control button {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #ccc;
+
+  background: white;
+
+  border-radius: 8px;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.traveler-control button:hover {
+  background: #f2f2f2;
+}
+
+.traveler-control span {
+  min-width: 30px;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+/* Budget */
+
+.budget-input {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.budget-input span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.budget-input input {
+  flex: 1;
+}
+
+/* Interests */
+
+.interest-options {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.interest-options label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+/* Optimization */
+
+.create-trip-page .form-group > label + label {
+  margin-bottom: 10px;
+}
+
+.create-trip-page .form-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Error */
+
+.error-message {
+  color: #d32f2f;
+
+  margin-bottom: 15px;
+
+  font-size: 14px;
+}
+
+/* Generate Button */
+
+.create-trip-page button[type="submit"] {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #111;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.create-trip-page button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .create-trip-page {
+    padding: 30px 20px;
+  }
+
+  .interest-options {
+    grid-template-columns: 1fr;
+  }
+}
+.destinationBox{
+      color: blue;
+    background-color: yellow;
+}

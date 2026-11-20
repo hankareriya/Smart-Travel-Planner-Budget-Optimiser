@@ -1,0 +1,798 @@
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.home {
+  width: 100%;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  padding: 60px 8%;
+}
+
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+
+.hero-content h1 {
+  font-size: 56px;
+  line-height: 1.1;
+
+  margin: 0 0 24px;
+}
+
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+
+  margin: 0 0 32px;
+
+  max-width: 520px;
+}
+
+
+.start-planning-btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.hero-image {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+
+  height: 400px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  display: block;
+}
+
+
+/* =========================================================
+   FEATURES SECTION
+========================================================= */
+
+.features {
+  padding: 80px 8%;
+}
+
+
+.features-header {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+
+.features-header h2 {
+  font-size: 36px;
+
+  margin: 0 0 16px;
+}
+
+
+.features-header p {
+  font-size: 18px;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   FEATURES GRID
+========================================================= */
+
+.features-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.feature-card {
+  padding: 30px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  background-color: #f7f7f7;
+}
+
+
+.feature-icon {
+  font-size: 40px;
+
+  margin-bottom: 20px;
+}
+
+
+.feature-card h3 {
+  font-size: 20px;
+
+  margin: 0 0 14px;
+}
+
+
+.feature-card p {
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   POPULAR DESTINATIONS
+========================================================= */
+
+.destinations {
+  padding: 80px 8%;
+}
+
+
+.destinations-header {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+
+.destinations-header h2 {
+  font-size: 36px;
+
+  margin: 0 0 16px;
+}
+
+
+.destinations-header p {
+  font-size: 18px;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   DESTINATIONS GRID
+========================================================= */
+
+.destinations-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   ATTRACTION CARD
+========================================================= */
+
+.attraction-card {
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background-color: #f7f7f7;
+}
+
+
+.attraction-image {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+.attraction-card-content {
+  padding: 24px;
+}
+
+
+.attraction-card-content h3 {
+  font-size: 22px;
+
+  margin: 0 0 10px;
+}
+
+
+.attraction-card-content p {
+  font-size: 16px;
+
+  margin: 0 0 20px;
+
+  line-height: 1.5;
+}
+
+
+.explore-btn {
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Hero */
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 40px 6%;
+  }
+
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .hero-image {
+    width: 100%;
+  }
+
+
+  /* Features */
+
+  .features {
+    padding: 60px 6%;
+  }
+
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .features-header h2 {
+    font-size: 30px;
+  }
+
+
+  /* Destinations */
+
+  .destinations {
+    padding: 60px 6%;
+  }
+
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .destinations-header h2 {
+    font-size: 30px;
+  }
+
+}
+/* =========================================================
+   RECENTLY VISITED
+========================================================= */
+
+.recent-trips {
+  padding: 80px 8%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  margin: 0 0 16px;
+}
+
+.section-header p {
+  font-size: 18px;
+  margin: 0;
+  color: #555555;
+}
+
+.recent-trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.recent-trip-card {
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #f7f7f7;
+}
+
+.recent-trip-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.recent-trip-content {
+  padding: 24px;
+}
+
+.recent-trip-content h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.recent-trip-content p {
+  margin: 0 0 12px;
+  color: #666666;
+}
+
+.recent-trip-content strong {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   TRENDING PICKS
+========================================================= */
+
+.trending-picks {
+  padding: 80px 8%;
+  background-color: #f7f7f7;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.trending-card {
+  position: relative;
+
+  height: 230px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  background: #ddd;
+}
+
+.trending-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+.trending-card:hover img {
+  transform: scale(1.05);
+}
+
+.trending-card-overlay {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 35px 18px 18px;
+
+  text-align: left;
+
+  color: white;
+
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+.trending-card-overlay h3 {
+  margin: 0 0 5px;
+  font-size: 22px;
+}
+
+.trending-card-overlay span {
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   DESTINATION POPUP
+========================================================= */
+
+.destination-modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 2000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.destination-modal-content {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 800px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: white;
+}
+
+.destination-modal-content > img {
+  width: 100%;
+
+  height: 350px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.destination-modal-info {
+  padding: 28px;
+}
+
+.destination-modal-info h2 {
+  margin: 0 0 12px;
+
+  font-size: 30px;
+}
+
+.destination-modal-info p {
+  margin: 0 0 22px;
+
+  color: #555555;
+
+  line-height: 1.6;
+}
+
+.modal-close {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: white;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.explore-itinerary-btn {
+  display: inline-block;
+
+  padding: 11px 20px;
+
+  background-color: #111111;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   WHY TRIPWISE
+========================================================= */
+
+.why-tripwise {
+  padding: 80px 8%;
+}
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+.why-card {
+  padding: 30px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  background-color: #f7f7f7;
+}
+
+.why-icon {
+  font-size: 36px;
+
+  margin-bottom: 18px;
+}
+
+.why-card h3 {
+  font-size: 20px;
+
+  margin: 0 0 14px;
+}
+
+.why-card p {
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+.reviews {
+  padding: 80px 8%;
+
+  background-color: #f7f7f7;
+}
+
+.reviews-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.review-card {
+  padding: 30px;
+
+  background-color: white;
+
+  border-radius: 16px;
+
+  border: 1px solid #e5e5e5;
+}
+
+.review-stars {
+  margin-bottom: 15px;
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+}
+
+.review-card p {
+  line-height: 1.6;
+
+  margin: 0 0 18px;
+}
+
+.review-card span {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   ABOUT ON HOME
+========================================================= */
+
+.home-about {
+  padding: 90px 8%;
+
+  text-align: center;
+}
+
+.home-about-content {
+  max-width: 750px;
+
+  margin: 0 auto;
+}
+
+.home-about-content h2 {
+  font-size: 36px;
+
+  margin: 0 0 20px;
+}
+
+.home-about-content p {
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  margin: 0 0 20px;
+}
+
+.home-about-slogan {
+  font-size: 20px !important;
+
+  font-weight: 700;
+}
+
+.learn-more-btn {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 11px 22px;
+
+  background-color: #111111;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 7px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - NEW SECTIONS
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .recent-trips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .home {
+    padding-top: 72px;
+  }
+
+  .recent-trips {
+    padding: 60px 6%;
+  }
+
+  .recent-trips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trending-picks {
+    padding: 60px 6%;
+  }
+
+  .trending-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-tripwise {
+    padding: 60px 6%;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews {
+    padding: 60px 6%;
+  }
+
+  .home-about {
+    padding: 60px 6%;
+  }
+
+}

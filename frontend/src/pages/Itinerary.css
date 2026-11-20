@@ -1,0 +1,342 @@
+/* =========================
+   ITINERARY PAGE
+========================= */
+
+.itinerary-page {
+  width: 100%;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 110px 24px 60px;
+}
+
+/* Trip Header */
+
+.itinerary-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-bottom: 50px;
+}
+
+.itinerary-header h1 {
+  font-size: 42px;
+
+  margin: 0 0 10px;
+}
+
+.itinerary-header p {
+  margin: 6px 0;
+
+  color: #666;
+
+  font-size: 17px;
+}
+
+/* Budget Highlight */
+
+.budget-highlight {
+  padding: 22px 30px;
+
+  border-radius: 14px;
+
+  background-color: #f4f7ff;
+
+  min-width: 220px;
+}
+
+.budget-highlight span {
+  display: block;
+
+  font-size: 14px;
+
+  color: #666;
+
+  margin-bottom: 8px;
+}
+
+.budget-highlight strong {
+  font-size: 26px;
+}
+
+.budget-highlight small {
+  font-size: 15px;
+
+  color: #666;
+}
+
+/* Day Section */
+
+.day-section {
+  margin-bottom: 55px;
+}
+
+.day-heading {
+  margin-bottom: 25px;
+}
+
+.day-heading h2 {
+  font-size: 28px;
+
+  margin: 0;
+}
+
+.day-heading p {
+  margin-top: 5px;
+
+  color: #777;
+}
+
+/* Timeline */
+
+.day-timeline {
+  width: 100%;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.attraction-row {
+  display: grid;
+
+  grid-template-columns: 100px 20px 1fr;
+
+  align-items: start;
+
+  gap: 15px;
+}
+
+.attraction-time {
+  font-weight: 600;
+
+  font-size: 15px;
+
+  padding-top: 20px;
+
+  color: #444;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  margin-top: 24px;
+
+  background-color: #111;
+}
+
+/* Attraction Card */
+
+.attraction-card {
+  background-color: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  margin-bottom: 10px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.attraction-card h3 {
+  margin: 0 0 8px;
+
+  font-size: 21px;
+}
+
+.attraction-rating {
+  margin: 5px 0;
+}
+
+.attraction-category {
+  color: #666;
+
+  margin: 7px 0;
+}
+
+.attraction-details {
+  display: flex;
+
+  gap: 25px;
+
+  margin-top: 15px;
+
+  font-weight: 600;
+}
+
+/* Timeline Line */
+
+.timeline-line {
+  margin-left: 125px;
+
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  color: #888;
+
+  font-size: 20px;
+}
+
+/* Budget Card */
+
+.budget-section {
+  margin: 50px 0;
+}
+
+.budget-card {
+  max-width: 500px;
+
+  padding: 28px;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.budget-card h2 {
+  margin-top: 0;
+
+  margin-bottom: 25px;
+}
+
+.budget-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.budget-row:last-child {
+  border-bottom: none;
+}
+
+/* Map */
+
+.map-section {
+  margin: 50px 0;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+}
+
+.map-placeholder {
+  height: 300px;
+
+  border-radius: 16px;
+
+  border: 2px dashed #d5d5d5;
+
+  background-color: #f8f8f8;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.map-route {
+  font-size: 24px;
+
+  margin-bottom: 20px;
+}
+
+.map-placeholder p {
+  color: #777;
+}
+
+/* Action Buttons */
+
+.itinerary-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 40px;
+
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  border: none;
+}
+
+.primary-button {
+  background-color: #111;
+
+  color: white;
+}
+
+.secondary-button {
+  background-color: #eeeeee;
+
+  color: #111;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+  .itinerary-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .budget-highlight {
+    width: 100%;
+  }
+
+  .attraction-row {
+    grid-template-columns: 75px 15px 1fr;
+
+    gap: 10px;
+  }
+
+  .timeline-line {
+    margin-left: 90px;
+  }
+
+  .itinerary-header h1 {
+    font-size: 34px;
+  }
+}

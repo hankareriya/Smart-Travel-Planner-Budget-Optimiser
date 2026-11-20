@@ -1,0 +1,56 @@
+.about-page {
+  padding: 120px 8% 80px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.about-header h1 {
+  font-size: 48px;
+  margin: 0 0 15px;
+}
+
+.about-header p {
+  font-size: 20px;
+  color: #666;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 30px;
+  margin: 45px 0 15px;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-slogan {
+  margin-top: 45px;
+
+  text-align: center;
+
+  font-size: 26px;
+
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+
+  .about-page {
+    padding: 110px 6% 60px;
+  }
+
+  .about-header h1 {
+    font-size: 38px;
+  }
+
+}

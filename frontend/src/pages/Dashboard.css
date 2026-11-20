@@ -1,0 +1,576 @@
+/* =========================================================
+   DASHBOARD PAGE
+========================================================= */
+
+.dashboard-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 60px 7% 70px;
+
+  background-color: #f8fafc;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   DASHBOARD HEADER
+========================================================= */
+
+.dashboard-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+}
+
+.dashboard-eyebrow {
+  margin: 0 0 8px;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #6b7280;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+
+  font-size: 42px;
+
+  line-height: 1.1;
+
+  color: #111827;
+}
+
+.dashboard-header p {
+  margin: 10px 0 0;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+  color: #6b7280;
+}
+
+
+/* =========================================================
+   CREATE TRIP BUTTON
+========================================================= */
+
+.create-trip-button {
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.primary-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: #111827;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+  background-color: #374151;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 15px
+    rgba(0, 0, 0, 0.12);
+}
+
+.primary-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.error-message {
+  margin-bottom: 30px;
+
+  padding: 14px 17px;
+
+  border-radius: 10px;
+
+  background-color: #fff1f2;
+
+  border: 1px solid #fecdd3;
+
+  color: #b42318;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   TRIP SECTIONS
+========================================================= */
+
+.trip-section {
+  margin-bottom: 55px;
+}
+
+.section-title-row {
+  margin-bottom: 22px;
+}
+
+.section-title-row h2 {
+  margin: 0;
+
+  font-size: 26px;
+
+  color: #111827;
+}
+
+.section-title-row p {
+  margin: 6px 0 0;
+
+  font-size: 14px;
+
+  color: #6b7280;
+}
+
+
+/* =========================================================
+   TRIP GRID
+========================================================= */
+
+.trip-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   TRIP CARD
+========================================================= */
+
+.trip-card {
+  overflow: hidden;
+
+  background-color: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CITY IMAGE
+========================================================= */
+
+.trip-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 220px;
+
+  overflow: hidden;
+
+  background-color: #e5e7eb;
+}
+
+.trip-city-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.trip-card:hover
+.trip-city-image {
+  transform: scale(1.06);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.trip-image-overlay {
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  padding: 65px 22px 20px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.78)
+    );
+}
+
+.trip-image-overlay h3 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   IMAGE FALLBACK
+========================================================= */
+
+.trip-image-fallback {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  background-color: #e5e7eb;
+
+  color: #4b5563;
+
+  font-size: 17px;
+}
+
+.trip-image-fallback span {
+  font-size: 48px;
+}
+
+.trip-image-fallback strong {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.trip-card-content {
+  padding: 22px;
+}
+
+
+/* =========================================================
+   TRIP DATE
+========================================================= */
+
+.trip-date {
+  margin-bottom: 17px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #6b7280;
+}
+
+
+/* =========================================================
+   BASIC INFORMATION
+========================================================= */
+
+.trip-basic-info {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px 20px;
+
+  margin-bottom: 19px;
+
+  font-size: 15px;
+
+  color: #374151;
+}
+
+.trip-basic-info span {
+  display: inline-flex;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   INTEREST BADGES
+========================================================= */
+
+.trip-interests {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 22px;
+}
+
+.interest-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 7px 11px;
+
+  border-radius: 999px;
+
+  background-color: #f3f4f6;
+
+  border: 1px solid #e5e7eb;
+
+  color: #374151;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   TRIP ACTIONS
+========================================================= */
+
+.trip-actions {
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 5px;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.empty-trips {
+  padding: 55px 25px;
+
+  text-align: center;
+
+  background-color: white;
+
+  border: 1px dashed #d1d5db;
+
+  border-radius: 18px;
+}
+
+.empty-trips span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 42px;
+}
+
+.empty-trips h3 {
+  margin: 0 0 7px;
+
+  font-size: 20px;
+
+  color: #111827;
+}
+
+.empty-trips p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .trip-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL TABLET
+========================================================= */
+
+@media (max-width: 750px) {
+
+  .dashboard-page {
+    padding: 45px 25px 60px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 36px;
+  }
+
+  .create-trip-button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .dashboard-page {
+    padding: 35px 18px 50px;
+  }
+
+  .dashboard-header {
+    margin-bottom: 35px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 32px;
+  }
+
+  .dashboard-header p {
+    font-size: 15px;
+  }
+
+  .trip-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .trip-image-wrapper {
+    height: 210px;
+  }
+
+  .trip-image-overlay h3 {
+    font-size: 25px;
+  }
+
+  .trip-card-content {
+    padding: 19px;
+  }
+
+  .section-title-row h2 {
+    font-size: 23px;
+  }
+
+}
