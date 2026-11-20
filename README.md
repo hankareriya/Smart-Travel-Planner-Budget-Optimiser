@@ -232,8 +232,8 @@ The following are example credentials for testing.
 | Field | Value |
 |---|---|
 | Name | Demo User |
-| Email | demo@example.com |
-| Password | Demo@12345 |
+| Email | user@example.com |
+| Password | string |
 
 **Important:** This is an example account, not a pre-created account.
 
